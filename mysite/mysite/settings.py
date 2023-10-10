@@ -151,15 +151,11 @@ EMAIL_PORT = 465
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 
-# Введите email, с которого будут приходить письма
 EMAIL_HOST_USER = ""
-# Введите email, с которого будут приходить письма
 DEFAULT_FROM_EMAIL = ""
-# Введите пароль от email, с которого будут приходить письма
 EMAIL_HOST_PASSWORD = ''
 CKEDITOR_UPLOAD_PATH = "uploads/"
 
-# Конфигурация для кастомизации CKEDITOR-а
 CKEDITOR_CONFIGS = {
     'default': {
         'skin': 'moono',
@@ -224,11 +220,8 @@ CKEDITOR_CONFIGS = {
     }
 }
 
-# Настройка угла наклона букв капчи
 CAPTCHA_LETTER_ROTATION = None
-# Делает капчу математическими вычислениями
 CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.math_challenge'
-# Убирает помехи с картинки качи
 CAPTCHA_NOISE_FUNCTIONS = None
 
 CACHES = {

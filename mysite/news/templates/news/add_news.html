@@ -10,7 +10,6 @@
 {% block content %}
 <h1>Добавление новости</h1>
 <form action="{% url 'add_news' %}" method="post">
-    <!--Токен необходим для защиты уязвимых перед CSRF ресурсов-->
     {% csrf_token %}
 
     {{ form.as_p }}

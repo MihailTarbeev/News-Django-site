@@ -5,7 +5,6 @@ from .models import News, Category
 from ckeditor_uploader.widgets import CKEditorUploadingWidget
 
 
-# Создаём класс формы, который связан с моделью News и определит для поля content новые настройки
 class NewsAdminForm(forms.ModelForm):
     content = forms.CharField(widget=CKEditorUploadingWidget())
 
@@ -15,7 +14,6 @@ class NewsAdminForm(forms.ModelForm):
 
 
 class NewsAdmin(admin.ModelAdmin):
-    # Подключаем класс NewsAdminForm через атрибут form
     form = NewsAdminForm
     list_display = ('id', 'title', 'category', 'created_at', 'updated_at', 'is_published', 'get_photo')
     list_display_links = ('id', 'title')
